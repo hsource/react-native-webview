@@ -489,6 +489,13 @@ export interface AndroidWebViewProps extends WebViewSharedProps {
   allowFileAccess?: boolean;
 
   /**
+   * Boolean that sets whether JavaScript running in the context of a file
+   * scheme URL should be allowed to access content from other file scheme
+   * URLs. The default value is `false`.
+   */
+  allowFileAccessFromFileUrls?: boolean;
+
+  /**
    * Used on Android only, controls whether form autocomplete data should be saved
    * @platform android
    */
